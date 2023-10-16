@@ -1,0 +1,103 @@
+:root {
+    --cor-botao: #4285f4;
+    --cor-botao-selecionado: #3973d1;
+    --cor-botao-clicado: #4285f4;
+    --cor-letra-botao: #ededed;
+    --cor-borda-botao: #ededed;
+    --cor-letra-formulario: #333;
+    --fonte-formulario: 'Roboto', sans-serif;
+    --cor-de-fundo: #ededed;
+    --font-size-padrao: 14px;
+}
+
+
+form {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: var(--fonte-formulario);
+}
+
+input, select{
+    background-color: #f5f5f5;
+    /* Cor de fundo */
+    border: 1px solid #ccc;
+    /* Borda */
+    border-radius: 4px;
+    /* Cantos arredondados */
+    padding: 8px;
+    /* Espaçamento interno */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    color: #333;
+    /* Cor do texto */
+    box-sizing: border-box;
+    /* Inclui preenchimento na largura total */
+}
+
+input:focus {
+    border-color: #4285f4; /* Cor da borda ao focar */
+    outline: none; /* Remove a borda destacada padrão */
+    box-shadow: 0 0 4px rgba(66, 133, 244, 0.5); /* Sombra ao focar */
+}
+
+select:focus{
+    border-color: #4285f4; /* Cor da borda ao focar */
+    outline: none; /* Remove a borda destacada padrão */
+    box-shadow: 0 0 4px rgba(66, 133, 244, 0.5); /* Sombra ao focar */
+}
+
+label {
+    font-size: var(--font-size-padrao); /* Tamanho da fonte */
+    color: var(--cor-letra-formulario); /* Cor do texto */
+    margin-bottom: 4px; /* Espaço entre o rótulo e o input */
+}
+
+.informacoes-pessoais,
+.preferencias,
+.hobbies-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.box {
+    margin-bottom: 16px;
+}
+
+
+.box input{
+    text-align: center;
+}
+
+.botoes-box {
+    display: flex;
+    width: 100%;
+}
+
+.botoes-box input {
+    width: 100%;
+    background-color: var(--cor-botao);
+    color: var(--cor-letra-botao);
+    border-color: var(--cor-borda-botao);
+    border-radius: 8px;
+    padding: 16px;
+    font-family: var(--fonte-formulario);
+    font-size: medium;
+}
+
+.botoes-box input:hover {
+    background-color: var(--cor-botao-selecionado);
+    font-weight: bold;
+}
+
+.botoes-box input:focus {
+    border-color: var(--cor-botao-clicado);
+}
+
+@media (max-width: 768px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+}
