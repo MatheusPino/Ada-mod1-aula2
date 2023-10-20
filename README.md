@@ -1,6 +1,6 @@
 # Exercícios - Aula 3
 
-Aula 3: https://bruno-cabral.notion.site/bruno-cabral/Aula-3-812f56a3406d46cf846a2479b105102f
+[Aula 3](https://bruno-cabral.notion.site/bruno-cabral/Aula-3-812f56a3406d46cf846a2479b105102f)
 
 ## Exercício 1
 Crie um formulário de agendamento com os seguintes campos:
